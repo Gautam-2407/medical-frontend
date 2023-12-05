@@ -1,0 +1,48 @@
+<div class="auth-main">
+    <div class="auth_div vivify fadeIn">
+        <div class="auth_brand">
+            <a class="navbar-brand" href="#"><img src="assets/images/icon.svg" width="50"
+                    class="d-inline-block align-top mr-2" alt="">Mooli</a>
+        </div>
+        <div class="card">
+            <div class="header">
+                <p class="lead">Login to your account</p>
+            </div>
+            <div class="body">
+                <form class="form-auth-small" (submit)="login($event)">
+                    <div class="form-group c_form_group">
+                        <label>Email</label>
+                        <input type="email" class="form-control"  placeholder="Enter your email address" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"/>
+                    </div>
+                    <div class="form-group c_form_group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Enter your password" />
+                    </div>
+                    <div class="form-group clearfix">
+                        <label class="fancy-checkbox element-left">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                    </div>
+                    <button  class="btn btn-dark btn-lg btn-block" type="submit"
+                    >LOGIN</button>
+                    <div class="bottom">
+                        <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a
+                                >
+                                Forgot password?</a></span>
+                        <span>Don't have an account? <a >Register
+                        </a></span> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="animate_lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
